@@ -12,9 +12,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshots
 
-![](./screenshots/desktop-version.png)
+![](./screenshot/desktop-version.png)
 
-![](./screenshots/mobile-version.png)
+![](./screenshot/mobile-version.png)
 
 ### The challenge
 
@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository](https://github.com/gabrielcardosodev/profile-card-component)
-- Live Site URL: [GitHub Pages](https://gabrielcardosodev.github.io/order-summary-component-challenge-hub/)
+- Live Site URL: [GitHub Pages](https://gabrielcardosodev.github.io/profile-card-component/)
 
 ### Built with
 

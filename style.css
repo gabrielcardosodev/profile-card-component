@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-very-dark-desatured-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+  --neutral-dark-grey: hsl(0, 0%, 59%);
+
+  --font-size: 1.125rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+}
+
+/* card */
+.container {
+  background: var(--primary-dark-cyan);
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+}
+
+.img-holder {
+  margin: -50px auto 20px auto;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+
+.user-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* content */
+.card-content {
+  padding: 0 20px 30px;
+}
+
+.name-age,
+.age,
+.city {
+  color: var(--primary-dark-grayish-blue);
+  font-weight: 400;
+}
+
+.name-age {
+  color: var(--primary-very-dark-desatured-blue);
+  font-size: var(--font-size);
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.1px;
+}
+
+.age {
+  font-size: var(--font-size);
+  margin-left: 5px;
+}
+
+.city {
+  font-size: 0.9rem;
+}
+
+.card-details {
+  border-top: 1px solid hsl(0, 0%, 59%, 0.2);
+  display: flex;
+  padding: 0 30px;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.number {
+  font-size: var(--font-size);
+  color: var(--primary-very-dark-desatured-blue);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 0.675rem;
+  color: var(--primary-dark-grayish-blue);
+  letter-spacing: 1.5px;
+}
+
+/* circles */
+.circles .circle-one,
+.circles .circle-two {
+  position: absolute;
+  width: 800px;
+  height: auto;
+}
+
+.circles .circle-one {
+  top: -480px;
+  left: -570px;
+  opacity: 0.5;
+  /* overflow: hidden; */
+}
+
+.circles .circle-two {
+  bottom: -480px;
+  right: -570px;
+  opacity: 0.6;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #0f0f0f;
+  background: hsl(0, 0%, 59%, 0.3);
+  padding: 10px 0;
+}
+
+.attribution a {
+  color: var(--primary-dark-grayish-blue);
+  transition: ease-in 0.3s;
+}
+
+.attribution a:hover {
+  color: var(--primary-dark-cyan);
+}
+
+@media (min-width: 768px) {
+  .circles .circle-one {
+    top: -400px;
+    left: -200px;
+    /* opacity: 0.8; */
+  }
+
+  .circles .circle-two {
+    bottom: -500px;
+    right: -150px;
+    /* opacity: 0.6; */
+  }
+}
